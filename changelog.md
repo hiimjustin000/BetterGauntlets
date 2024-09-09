@@ -1,4 +1,4 @@
-# 0.0.1-beta2
+# 0.0.1-beta.2
 - Added licensing information.
 - Added editable Oxygene font (`-uhd`, `-hd`, `standard`).
 - Changed the mod logo.
