@@ -5,8 +5,11 @@ Gauntlet Redesign is -- as the name implies -- a mod that completely redesigns t
 
 This mod requires Geode in order to run at all. Please install Geode first.
 
-This mod brings Gauntlets to life with all new particles, backgrounds/colors, and islands!
+This mod gives life to the Gauntlets with all new visuals! Particles, backgrounds, colors, islands, and more!
 
 ## Credits:
-- LimeGradient - Coding (they did the dirty work)
-- Dasshu - Assets and coding
+- LimeGradient - Coding the mod
+- Dasshu - Idea, assets, logo, coding
+
+## Special Thanks:
+- Erymanthis - Helping with the custom font!
