@@ -13,5 +13,13 @@
 		"LimeGradient",
 		"Dasshu"
 	],
-	"description": "Overhauls the gauntlet menu to look pretty!"
+	"description": "Overhauls the gauntlet menu to look pretty!",
+	"links": {
+		"source": "https://github.com/LimeGradient/GauntletRedesign",
+		"community": "https://discord.gg/EGfCJVhm8B"
+	},
+	"tags": [
+		"interface", "enhancement"
+	]
 }
+
