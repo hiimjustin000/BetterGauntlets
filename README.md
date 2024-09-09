@@ -1,7 +1,7 @@
 # GauntletRedesign
-This is where she makes a mod.
+This is where we makes a mod. :D
 
-<img src="logo.png" width="150" alt="the mod's logo" />
+<img src="logo.png" width="150" alt="The logo for Gauntlet Redesign" />
 
 *Update logo.png to change your mod's icon (please)*
 

@@ -8,10 +8,10 @@
 	},
 	"id": "limegradient.gauntletredesign",
 	"name": "GauntletRedesign",
-	"version": "v1.0.0",
+	"version": "v0.0.1",
 	"developers": [
 		"LimeGradient",
 		"Dasshu"
 	],
-	"description": "Redesigns the gauntlet menu to look pretty"
+	"description": "Overhauls the gauntlet menu to look pretty!"
 }
