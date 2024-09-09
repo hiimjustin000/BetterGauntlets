@@ -1,23 +1,12 @@
 # GauntletRedesign
-This is where we makes a mod. :D
+**This is where we makes a mod :D**
 
-<img src="logo.png" width="150" alt="The logo for Gauntlet Redesign" />
+Gauntlet Resedign is -- as the name implies -- a mod that completely redesigns the Gauntlet level layouts.
 
-*Update logo.png to change your mod's icon (please)*
+This mod requires Geode in order to run at all. Please install Geode first.
 
-## Getting started
-We recommend heading over to [the getting started section on our docs](https://docs.geode-sdk.org/getting-started/) for useful info on what to do next.
+This mod brings Gauntlets to life with all new particles, backgrounds/colors, and islands!
 
-## Build instructions
-For more info, see [our docs](https://docs.geode-sdk.org/getting-started/create-mod#build)
-```sh
-# Assuming you have the Geode CLI set up already
-geode build
-```
-
-# Resources
-* [Geode SDK Documentation](https://docs.geode-sdk.org/)
-* [Geode SDK Source Code](https://github.com/geode-sdk/geode/)
-* [Geode CLI](https://github.com/geode-sdk/cli)
-* [Bindings](https://github.com/geode-sdk/bindings/)
-* [Dev Tools](https://github.com/geode-sdk/DevTools)
+## Credits:
+- LimeGradient - Coding (they did the dirty work)
+- Dasshu - Assets and coding
