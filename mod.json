@@ -1,0 +1,17 @@
+{
+	"geode": "3.4.0",
+	"gd": {
+		"win": "2.206",
+		"android": "2.206",
+		"mac": "2.206",
+		"ios": "2.206"
+	},
+	"id": "limegradient.gauntletredesign",
+	"name": "GauntletRedesign",
+	"version": "v1.0.0",
+	"developers": [
+		"LimeGradient",
+		"Dasshu"
+	],
+	"description": "Redesigns the gauntlet menu to look pretty"
+}
