@@ -3,24 +3,17 @@
 
 using namespace geode::prelude;
 
-class $modify(GauntletLayer) {
-	bool init(GauntletType gauntletType) {
-		if (!GauntletLayer::init(gauntletType)) {
-			return false;
-		}
+class $modify(RedesignedGauntletLayer, GauntletLayer) {
+	void loadLevelsFinished(CCArray* p0, char const* p1, int p2) {
+		GauntletLayer::loadLevelsFinished(p0, p1, p2);
 
 		auto backgroundSprite = static_cast<CCSprite*>(this->getChildren()->objectAtIndex(0));
 		backgroundSprite->setID("gauntlet-background-sprite");
+		backgroundSprite->setColor(ccc3(255, 0, 0));
 
-		CCObject* childrenObj;
-		CCARRAY_FOREACH(this->getChildren(), childrenObj) {
-			if (auto spriteCast = static_cast<CCNode*>(childrenObj)) {
-				
-			}
+		for (int i = 2; i <= 38; i++) { // ok idk why the fuck 38 works but it works
+			auto circleSprite = static_cast<CCSprite*>(this->getChildren()->objectAtIndex(i));
+			circleSprite->setVisible(false);
 		}
-
-		log::debug("Hello from my MenuLayer::init hook! This layer has {} children.", this->getChildrenCount());
-
-		return true;
 	}
 };
