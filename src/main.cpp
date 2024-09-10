@@ -11,9 +11,14 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 		backgroundSprite->setID("gauntlet-background-sprite");
 		backgroundSprite->setColor(ccc3(255, 0, 0));
 
+		auto gauntletTitleText = static_cast<CCLabelBMFont*>(this->getChildren()->objectAtIndex(1));
+		gauntletTitleText->setFntFile("GR_OxygeneFont.fnt"_spr);
+
 		for (int i = 2; i <= 38; i++) { // ok idk why the fuck 38 works but it works
 			auto circleSprite = static_cast<CCSprite*>(this->getChildren()->objectAtIndex(i));
 			circleSprite->setVisible(false);
 		}
+
+
 	}
 };

@@ -20,6 +20,11 @@
 	},
 	"tags": [
 		"interface", "enhancement"
-	]
+	],
+	"resources": {
+		"files": [
+			"resources/fonts/GR_OxygeneFont.fnt"
+		]
+	}
 }
 
