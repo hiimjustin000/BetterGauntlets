@@ -1,6 +1,6 @@
 # 0.0.1-beta.2
 - Added licensing information.
-- Added editable Oxygene font (`-uhd`, `-hd`, `standard`).
+- Added editable Oxygene font.
 - Changed the mod logo.
 # 0.0.1-beta
 - Added Geode search query information
