@@ -19,12 +19,13 @@
 		"community": "https://discord.gg/EGfCJVhm8B"
 	},
 	"tags": [
-		"interface", "enhancement"
+		"interface",
+		"enhancement"
 	],
 	"resources": {
 		"files": [
-			"resources/fonts/GR_OxygeneFont.fnt"
+			"resources/fonts/*.fnt",
+			"resources/fonts/*.png"
 		]
 	}
 }
-
