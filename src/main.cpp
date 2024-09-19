@@ -7,31 +7,33 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 	void loadLevelsFinished(CCArray* p0, char const* p1, int p2) {
 		GauntletLayer::loadLevelsFinished(p0, p1, p2);
 
-		auto backgroundSprite = static_cast<CCSprite*>(this->getChildren()->objectAtIndex(0));
-		backgroundSprite->setID("gauntlet-background-sprite");
-		backgroundSprite->setColor(ccc3(51, 16, 16));
+		auto backgroundSprite = static_cast<CCSprite*>(this->getChildByIDRecursive("background"));
 
 		// this is the shadow text for whatever fuckall reason
-		auto gauntletTitleText = static_cast<CCLabelBMFont*>(this->getChildByIDRecursive("title"));
-		gauntletTitleText->setFntFile("GR_OxygeneFont.fnt"_spr);
-		gauntletTitleText->setColor(ccc3(0, 0, 0));
-		gauntletTitleText->setScale(0.50);
-		gauntletTitleText->setPositionY(287);
-		gauntletTitleText->setPositionX(286.50);
+		auto gauntletShadowText = static_cast<CCLabelBMFont*>(this->getChildByIDRecursive("title"));
+			gauntletShadowText->setFntFile("GR_OxygeneFont.fnt"_spr);
+			gauntletShadowText->setColor(ccc3(0, 0, 0));
+			gauntletShadowText->setScale(0.50);
+			gauntletShadowText->setPosition(286.50, 287);
 		
 		// and this is the actual title text like what dude
-		auto gauntletShadowText = static_cast<CCLabelBMFont*>(this->getChildByIDRecursive("title-shadow"));
-		gauntletShadowText->setFntFile("GR_OxygeneFont.fnt"_spr);
-		gauntletShadowText->setColor(ccc3(255, 255, 255));
-		gauntletShadowText->setScale(0.50);
-		gauntletShadowText->setPositionY(290);
-		gauntletShadowText->setPositionX(284.50);
+		auto gauntletTitleText = static_cast<CCLabelBMFont*>(this->getChildByIDRecursive("title-shadow"));
+			gauntletTitleText->setFntFile("GR_OxygeneFont.fnt"_spr);
+			gauntletTitleText->setColor(ccc3(255, 255, 255));
+			gauntletTitleText->setScale(0.50);
+			gauntletTitleText->setPosition(284.50, 290);
+		
+		// heres the part where jay tries adding the highlight (spoiler: its failing horribly lol)
+		auto gauntletHighlightText = static_cast<CCLabelBMFont*>(this->getChildByIDRecursive("gauntletHighlightText"));
+			gauntletHighlightText->setFntFile("GR_OxygeneFont.fnt"_spr);
+			gauntletHighlightText->setColor(ccc3(255, 0, 0));
+			gauntletHighlightText->setScale(0.50);
+			gauntletHighlightText->setPosition(284.50, 290);
 
-		// for (int i = 2; i <= 38; i++) { // ok idk why the fuck 38 works but it works
-			// auto circleSprite = static_cast<CCSprite*>(this->getChildren()->objectAtIndex(i));
-			// circleSprite->setVisible(false);
-		// }
-
-
+		if (this->m_gauntletType == GauntletType::Fire) {
+			auto gauntletHLText = CCLabelBMFont::create("Fire Gauntlet", "GR_OxygeneFontHighlight.fnt"_spr);
+				backgroundSprite->setColor(ccc3(63, 9, 9));
+				this->addChild(gauntletHLText);
+		}
 	}
 };
