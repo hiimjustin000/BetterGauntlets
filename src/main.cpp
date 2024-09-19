@@ -9,15 +9,22 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 
 		auto backgroundSprite = static_cast<CCSprite*>(this->getChildren()->objectAtIndex(0));
 		backgroundSprite->setID("gauntlet-background-sprite");
-		backgroundSprite->setColor(ccc3(255, 0, 0));
+		backgroundSprite->setColor(ccc3(51, 16, 16));
 
 		auto gauntletTitleText = static_cast<CCLabelBMFont*>(this->getChildren()->objectAtIndex(1));
 		gauntletTitleText->setFntFile("GR_OxygeneFont.fnt"_spr);
+		gauntletTitleText->setColor(ccc3(0, 0, 0));
+		gauntletTitleText->setScale(0.50);
+		
+		auto gauntletShadowText = static_cast<CCLabelBMFont*>(this->getChildByIDRecursive("title-shadow"));
+		gauntletShadowText->setFntFile("GR_OxygeneFont.fnt"_spr);
+		gauntletShadowText->setColor(ccc3(255, 255, 255));
+		gauntletShadowText->setScale(0.50);
 
-		for (int i = 2; i <= 38; i++) { // ok idk why the fuck 38 works but it works
-			auto circleSprite = static_cast<CCSprite*>(this->getChildren()->objectAtIndex(i));
-			circleSprite->setVisible(false);
-		}
+		// for (int i = 2; i <= 38; i++) { // ok idk why the fuck 38 works but it works
+			// auto circleSprite = static_cast<CCSprite*>(this->getChildren()->objectAtIndex(i));
+			// circleSprite->setVisible(false);
+		// }
 
 
 	}
