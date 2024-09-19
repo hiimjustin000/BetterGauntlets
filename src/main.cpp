@@ -22,18 +22,19 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 			gauntletTitleText->setColor(ccc3(255, 255, 255));
 			gauntletTitleText->setScale(0.50);
 			gauntletTitleText->setPosition(284.50, 290);
-		
-		// heres the part where jay tries adding the highlight (spoiler: its failing horribly lol)
-		auto gauntletHighlightText = static_cast<CCLabelBMFont*>(this->getChildByIDRecursive("gauntletHighlightText"));
-			gauntletHighlightText->setFntFile("GR_OxygeneFont.fnt"_spr);
-			gauntletHighlightText->setColor(ccc3(255, 0, 0));
-			gauntletHighlightText->setScale(0.50);
-			gauntletHighlightText->setPosition(284.50, 290);
 
 		if (this->m_gauntletType == GauntletType::Fire) {
 			auto gauntletHLText = CCLabelBMFont::create("Fire Gauntlet", "GR_OxygeneFontHighlight.fnt"_spr);
 				backgroundSprite->setColor(ccc3(63, 9, 9));
+				gauntletHLText->setID("gauntletHLText");
 				this->addChild(gauntletHLText);
 		}
+
+		// heres the part where jay tries adding the highlight (spoiler: its failing horribly lol)
+		auto gauntletHighlightText = static_cast<CCLabelBMFont*>(this->getChildByIDRecursive("gauntletHLText"));
+			gauntletHighlightText->setFntFile("GR_OxygeneFontHighlight.fnt"_spr);
+			gauntletHighlightText->setColor(ccc3(255, 0, 0));
+			gauntletHighlightText->setScale(0.50);
+			gauntletHighlightText->setPosition(284.50, 290);
 	}
 };
