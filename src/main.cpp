@@ -7,11 +7,10 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 	void loadLevelsFinished(CCArray* p0, char const* p1, int p2) {
 		GauntletLayer::loadLevelsFinished(p0, p1, p2);
 
-		auto backgroundSprite = static_cast<CCSprite*>(this->getChildren()->objectAtIndex(0));
-		backgroundSprite->setID("gauntlet-background-sprite");
+		auto backgroundSprite = static_cast<CCSprite*>(this->getChildByIDRecursive("background"));
 		backgroundSprite->setColor(ccc3(51, 16, 16));
 
-		auto gauntletTitleText = static_cast<CCLabelBMFont*>(this->getChildren()->objectAtIndex(1));
+		auto gauntletTitleText = static_cast<CCLabelBMFont*>(this->getChildByIDRecursive("title"));
 		gauntletTitleText->setFntFile("GR_OxygeneFont.fnt"_spr);
 		gauntletTitleText->setColor(ccc3(0, 0, 0));
 		gauntletTitleText->setScale(0.50);

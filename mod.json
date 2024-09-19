@@ -27,5 +27,12 @@
 			"resources/fonts/*.fnt",
 			"resources/fonts/*.png"
 		]
-	}
+	},
+	"dependencies": [
+		{
+			"id": "geode.node-ids",
+			"version": ">=1.14.0",
+			"importance": "required"
+		}
+	]
 }
