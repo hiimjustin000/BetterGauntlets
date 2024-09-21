@@ -1,5 +1,6 @@
-If you would like to support us, join our Discord Servers!
+If you would like to support me, consider the following:
 
-[DasshuGames Discord](https://discord.gg/fGC8YjSv) | [Lime's Grove Discord](https://discord.gg/EGfCJVhm8B)
+Join the [DasshuGames Discord](https://discord.gg/fGC8YjSv)!
+Support my [Ko-Fi](Ko-fi.com/jaydasshu)!
 
-<cg>Thank you for downloading our mod!</c>
+<cg>Thank you for downloading my mod!</c>

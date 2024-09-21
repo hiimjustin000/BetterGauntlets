@@ -1,21 +1,18 @@
-# Gauntlet Redesign
-**This is where we makes a mod :D**
+# <cr>Gauntlet Redesign</c>
+<cj>My first ever Geometry Dash mod!</c>
 
-Gauntlet Redesign is -- as the name implies -- a mod that completely redesigns the Gauntlet level layouts.
+## <co>Mod Overview</c>
+This mod gives life to the Gauntlets with all new <cg>colors</c>, <cg>islands</c>, and <cg>more</c>!
 
-This mod requires Geode in order to function. Please install Geode first.
+## <co>Functions</c>
+- Adds:
+    - Gauntlet islands
+    - Reworked Gauntlet header font
+    - Visual changes per Gauntlet
+    - 
 
-This mod gives life to the Gauntlets with all new visuals! Particles, backgrounds, colors, islands, and more!
-
-## Credits:
-- Dasshu
-    - Idea
-    - Assets
-    - Logo
-    - Coding
-- LimeGradient
-    - Coding
-
-## Special Thanks:
-- Erymanthis - Helping with the custom font!
-- Capeling - Helping with code and some tips!
+## <co>Special Thanks:</c>
+- <cy>Erymanthis</c> - Helping with the custom font
+- <cy>Capeling</c> - Helping with code and some tips
+- <cy>LimeGradient</c> - Setting up the mod environment for me :D
+- <cy>The Geode Discord</c> - For putting up with me

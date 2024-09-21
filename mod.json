@@ -8,15 +8,14 @@
 	},
 	"id": "dasshu.gauntletredesign",
 	"name": "Gauntlet Redesign",
-	"version": "v0.0.1-alpha.2",
+	"version": "v0.0.1-alpha.3",
 	"developers": [
-		"LimeGradient",
 		"Dasshu"
 	],
-	"description": "Overhauls the gauntlet menu to look pretty!",
+	"description": "Brings Gauntlets to life!",
 	"links": {
 		"source": "https://github.com/LimeGradient/GauntletRedesign",
-		"community": "https://discord.gg/EGfCJVhm8B"
+		"community": "https://discord.gg/fGC8YjSv"
 	},
 	"tags": [
 		"interface",
@@ -25,7 +24,8 @@
 	"resources": {
 		"files": [
 			"resources/fonts/*.fnt",
-			"resources/fonts/*.png"
+			"resources/fonts/*.png",
+			"resources/GauntletRedesign/*.png"
 		]
 	},
 	"dependencies": [
