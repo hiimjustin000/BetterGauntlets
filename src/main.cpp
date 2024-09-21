@@ -65,15 +65,15 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 			case GauntletType::Portal: editGauntletSingle("Portal", ccc3(39, 50, 58), ccc3(255, 255, 255), ccc3(184, 66, 125)); break;
 			case GauntletType::Strange: editGauntletSingle("Strange", ccc3(36, 68, 46), ccc3(255, 255, 255), ccc3(180, 125, 190)); break;
 			case GauntletType::Fantasy: editGauntletSingle("Fantasy", ccc3(54, 40, 18), ccc3(255, 255, 255), ccc3(151, 201, 85)); break;
-			case GauntletType::Mystery: editGauntletSingle("Mystery", ccc3(47, 71, 36), ccc3(255, 255, 255), ccc3(216, 174, 57)); break;
+			case GauntletType::Mystery: editGauntletSingle("Gauntlet", ccc3(47, 71, 36), ccc3(255, 255, 255), ccc3(216, 174, 57)); break;
 			case GauntletType::Cursed: editGauntletSingle("Cursed", ccc3(46, 14, 43), ccc3(255, 255, 255), ccc3(159, 255, 114)); break;
 			case GauntletType::Cyborg: editGauntletSingle("Cyborg", ccc3(50, 50, 50), ccc3(255, 255, 255), ccc3(195, 219, 214)); break;
 			case GauntletType::Castle: editGauntletSingle("Castle", ccc3(62, 90, 122), ccc3(255, 255, 255), ccc3(190, 214, 230)); break;
 			case GauntletType::World: editGauntletSingle("World", ccc3(76, 77, 165), ccc3(255, 255, 255), ccc3(154, 231, 90)); break;
 			case GauntletType::Galaxy: editGauntletSingle("Galaxy", ccc3(40, 26, 44), ccc3(255, 255, 255), ccc3(249, 75, 255)); break;
 			case GauntletType::Universe: editGauntletSingle("Universe", ccc3(23, 1, 36), ccc3(255, 255, 255), ccc3(255, 94, 0)); break;
-			case GauntletType::Discord: editGauntletSingle("Discord", ccc3(31, 35, 75), ccc3(255, 255, 255), ccc3(88, 101, 212)); break;
-			case GauntletType::Split: editGauntletSingle("Split Gauntlet", ccc3(50, 50, 50), ccc3(255, 255, 255), ccc3(255, 90, 192)); break;
+			case GauntletType::Discord: editGauntletSingle("Discord", ccc3(44, 47, 51), ccc3(255, 255, 255), ccc3(88, 101, 212)); break;
+			case GauntletType::Split: editGauntletSingle("Split", ccc3(50, 50, 50), ccc3(255, 255, 255), ccc3(255, 90, 192)); break;
 		}
 
 		m_fields->m_loaded = true;
@@ -86,17 +86,22 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 		auto gauntletTitleText = static_cast<CCLabelBMFont*>(this->getChildByID("title-shadow"));
 		if (!gauntletTitleText) return;
 
-		// ----- Colors ----- //
+		auto gauntletShadowText = static_cast<CCLabelBMFont*>(this->getChildByID("title"));
+		if (!gauntletShadowText) return;
+
+		// Colors //
 		m_backgroundSprite->setColor(bgColor);
 		gauntletOutlineText->setColor(outlineTextColor);
 		gauntletTitleText->setColor(titleColor);
 
-		// ----- Font Edits ----- //
+		// Text Edits //
 		gauntletOutlineText->setID("title-Highlight"_spr);
 		gauntletOutlineText->setFntFile("GR_OxygeneFontOutline.fnt"_spr);
 		gauntletOutlineText->setScale(0.750);
 		gauntletOutlineText->setPosition(283.38, 290);
-
+		gauntletTitleText->setString(std::string(title + " Gauntlet").c_str());
+		gauntletShadowText->setString(std::string(title + " Gauntlet").c_str());
+		
 		this->addChild(gauntletOutlineText);
 	}
 };
