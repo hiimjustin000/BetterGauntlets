@@ -8,14 +8,12 @@
 	},
 	"id": "dasshu.gauntletredesign",
 	"name": "Gauntlet Redesign",
-	"version": "v0.0.1-alpha.3",
-	"developers": [
-		"Dasshu"
-	],
+	"version": "v1.0.0",
+	"developer": "Dasshu",
 	"description": "Brings Gauntlets to life!",
 	"links": {
 		"source": "https://github.com/LimeGradient/GauntletRedesign",
-		"community": "https://discord.gg/fGC8YjSv"
+		"community": "https://discord.gg/F94qat6N3D"
 	},
 	"tags": [
 		"interface",
@@ -34,5 +32,12 @@
             "version": ">=v1.4.0",
             "importance": "required"
         }
+	],
+	"incompatibilities": [
+		{
+			"id": "limegradient.gauntletredesign",
+			"version": "*",
+			"importance": "conflicting"
+		}
 	]
 }

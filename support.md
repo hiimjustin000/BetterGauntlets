@@ -1,6 +1,7 @@
-If you would like to support me, consider the following:
+# <cp>Thank you!</c>
+This is my first ever mod, so it would mean a lot if you support me on my future projects!
 
-Join the [DasshuGames Discord](https://discord.gg/fGC8YjSv)!
-Support my [Ko-Fi](Ko-fi.com/jaydasshu)!
+- Join my [Discord Server](https://discord.gg/F94qat6N3D)!
+- Support me on [Ko-fi](ko-fi.com/jaydasshu)!
 
-<cg>Thank you for downloading my mod!</c>
+Thank you for downloading my mod!

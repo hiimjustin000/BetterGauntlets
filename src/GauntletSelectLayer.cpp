@@ -18,16 +18,16 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
             int newPage = m_scrollLayer->m_page;
             if(newPage <= -1) newPage = m_fields->m_dots.size() + newPage;
             if(newPage >= m_fields->m_dots.size()) newPage = newPage % m_fields->m_dots.size();
-            log::info("{}, {}", btnIdx, newPage);
+            // log::info("{}, {}", btnIdx, newPage);
 
             if(btnIdx == newPage)
                 static_cast<CCSprite*>(btn->getNormalImage())->setDisplayFrame(sfc->spriteFrameByName("gj_navDotBtn_on_001.png"));
             else
                 static_cast<CCSprite*>(btn->getNormalImage())->setDisplayFrame(sfc->spriteFrameByName("gj_navDotBtn_off_001.png"));
-
         }
 
     }
+
     void setupGauntlets() {
         GauntletSelectLayer::setupGauntlets();
 
@@ -54,7 +54,6 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
             dot->setVisible(false);
         }
         m_scrollLayer->m_dotsVisible = false;
-
 
         updateDots();
 
