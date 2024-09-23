@@ -2,7 +2,7 @@
 <cj>My first ever Geometry Dash mod!</c>
 
 ## <co>Mod Overview</c>
-Gauntlets as they are dont get the love they deserve, so this mod aims to bring <cr>life to the Gauntlets</c> with custom <co>colors</c>, <cy>fonts</c>, and <cg>more</c>!
+Gauntlets as they are don't get the love they deserve, so this mod aims to bring <cr>life to the Gauntlets</c> with custom <co>colors</c>, <cy>fonts</c>, and <cg>more</c>!
 
 ## <co>Functions</c>
     - Reworked Gauntlet header fonts
