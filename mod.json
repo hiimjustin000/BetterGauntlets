@@ -7,8 +7,8 @@
 		"ios": "2.206"
 	},
 	"id": "dasshu.gauntletredesign",
-	"name": "Gauntlet Redesign",
-	"version": "v1.0.0",
+	"name": "Gauntlet Touchup",
+	"version": "v1.0.1-beta.1",
 	"developer": "Dasshu",
 	"description": "Brings Gauntlets to life!",
 	"links": {
@@ -23,7 +23,7 @@
 		"files": [
 			"resources/fonts/*.fnt",
 			"resources/fonts/*.png",
-			"resources/GauntletRedesign/*.png"
+			"resources/gauntletLayer/*.png"
 		]
 	},
 	"dependencies": [
@@ -32,12 +32,6 @@
             "version": ">=v1.4.0",
             "importance": "required"
         }
-	],
-	"incompatibilities": [
-		{
-			"id": "limegradient.gauntletredesign",
-			"version": "*",
-			"importance": "conflicting"
-		}
+
 	]
 }

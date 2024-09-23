@@ -7,7 +7,7 @@ Gauntlets as they are don't get the love they deserve, so this mod aims to bring
 ## <co>Functions</c>
     - Reworked Gauntlet header fonts
     - Visual improvements per Gauntlet
-    - Page Buttons
+    - Page Buttons on `GauntletSelectLayer`
 
 ## <co>Planned Features</c>
     - Islands
