@@ -9,6 +9,7 @@ project(GauntletRedesign VERSION 1.0.0)
 add_library(${PROJECT_NAME} SHARED
     src/main.cpp
     src/GauntletSelectLayer.cpp
+    src/keybinds.cpp
     # Add any extra C++ source files here
 )
 

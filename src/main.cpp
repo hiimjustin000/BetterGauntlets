@@ -64,8 +64,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 		case GauntletType::Time: editGauntletSingle("Time", ccc3(17, 69, 128), ccc3(255, 255, 255), ccc3(64, 252, 200), ccc3(17, 114, 90)); break;
 		case GauntletType::Crystal: editGauntletSingle("Crystal", ccc3(51, 2, 31), ccc3(255, 255, 255), ccc3(248, 223, 255), ccc3(246, 58, 218)); break;
 		case GauntletType::Magic: editGauntletSingle("Magic", ccc3(14, 16, 51), ccc3(255, 255, 255), ccc3(77, 250, 255), ccc3(36, 52, 145)); break;
-		case GauntletType::Spike: editGauntletSingle("Spike", ccc3(61, 38, 1), ccc3(255, 255, 255), ccc3(255, 222, 90), ccc3(101, 50, 2)); break;
-		case GauntletType::Monster: editGauntletSingle("Monster", ccc3(23, 58, 28), ccc3(255, 255, 255), ccc3(65, 214, 35), ccc3(8, 110, 13)); break;
+		case GauntletType::Spike: editGauntletSingle("Monster", ccc3(23, 58, 28), ccc3(255, 255, 255), ccc3(65, 214, 35), ccc3(8, 110, 13)); break;
 		case GauntletType::Doom: editGauntletSingle("Doom", ccc3(48, 36, 33), ccc3(255, 255, 255), ccc3(141, 133, 128), ccc3(75, 69, 60)); break;
 		case GauntletType::Death: editGauntletSingle("Death", ccc3(22, 22, 22), ccc3(255, 255, 255), ccc3(100, 100, 100), ccc3(48, 48, 48)); break;
 		case GauntletType::Forest: editGauntletSingle("Forest", ccc3(33, 68, 34), ccc3(255, 255, 255), ccc3(148, 255, 98), ccc3(61, 165, 20)); break;

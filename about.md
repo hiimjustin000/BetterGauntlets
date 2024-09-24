@@ -16,7 +16,7 @@ Gauntlets as they are don't get the love they deserve, so this mod aims to bring
 - Animations
 
 ## <co>Special Thanks</c>
-- <cy>**Erymanthis**</c> - Helping with the custom font
+- <cy>**Erymanthus**</c> - Helping with the custom font
 - <cy>**Capeling**</c> - Helping with lots of code and tips
 - <cy>**LimeGradient**</c> - Setting up the mod environment for me :D
 - <cy>**The Geode Discord**</c> - For putting up with me
