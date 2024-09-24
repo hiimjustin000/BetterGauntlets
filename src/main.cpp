@@ -1,5 +1,6 @@
 #include <Geode/Geode.hpp>
 #include <Geode/modify/GauntletLayer.hpp>
+#include <algorithm>
 
 using namespace geode::prelude;
 
@@ -24,6 +25,10 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 			editGauntlets();
 	}
 	void editGauntlets() {
+
+	auto winSizeX = CCDirector::sharedDirector()->getWinSize().width;
+	auto winSizeY = CCDirector::sharedDirector()->getWinSize().height;
+
 	// this is the shadow text for whatever fuckall reason
 	auto gauntletShadowText = static_cast<CCLabelBMFont*>(this->getChildByID("title"));
 	if (!gauntletShadowText) return;
@@ -31,7 +36,8 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 	gauntletShadowText->setFntFile("GR_OxygeneFontOutline.fnt"_spr);
 	gauntletShadowText->setColor(ccc3(0, 0, 0));
 	gauntletShadowText->setScale(0.750);
-	gauntletShadowText->setPosition(283.50, 288);
+	gauntletShadowText->setPositionX(winSizeX / 2 + 1);
+	gauntletShadowText->setPositionY(winSizeY - 32.5);
 
 	// and this is the actual title text like what dude
 	auto gauntletTitleText = static_cast<CCLabelBMFont*>(this->getChildByID("title-shadow"));
@@ -40,12 +46,13 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 	gauntletTitleText->setFntFile("GR_OxygeneFont.fnt"_spr);
 	gauntletTitleText->setColor(ccc3(255, 255, 255));
 	gauntletTitleText->setScale(0.750);
-	gauntletTitleText->setPosition(283, 290);
+	gauntletTitleText->setPositionX(winSizeX / 2);
+	gauntletTitleText->setPositionY(winSizeY - 30);
 
 	switch(m_gauntletType) {
 		default: break;
 	
-	// Active Gauntlets //
+	// Active Gauntlets
 		case GauntletType::Fire: editGauntletSingle("Fire", ccc3(63, 29, 9), ccc3(255, 255, 255), ccc3(255, 255, 0), ccc3(231, 79, 0)); break;
 		case GauntletType::Ice: editGauntletSingle("Ice", ccc3(8, 68, 83), ccc3(255, 255, 255), ccc3(192, 236, 255), ccc3(0, 174, 255)); break;
 		case GauntletType::Poison: editGauntletSingle("Poison", ccc3(20, 63, 9), ccc3(255, 255, 255), ccc3(229, 255, 0), ccc3(80, 179, 0)); break;
@@ -86,7 +93,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 
 		case GauntletType::Split: editGauntletSingle("Split", ccc3(62, 63, 86), ccc3(255, 255, 255), ccc3(109, 110, 151), ccc3(255, 110, 237)); break;
 
-	// Inactive Gauntlets //
+	// Inactive Gauntlets
 		case GauntletType::Acid: editGauntletSingle("Acid", ccc3(45, 38, 17), ccc3(255, 255, 255), ccc3(208, 255, 0), ccc3(162, 255, 24)); break;
 		case GauntletType::Christmas: editGauntletSingle("Christmas", ccc3(0, 23, 48), ccc3(255, 255, 255), ccc3(255, 0, 0), ccc3(255, 208, 0)); break;
 		case GauntletType::Dragon: editGauntletSingle("Dragon", ccc3(46, 0, 0), ccc3(255, 255, 255), ccc3(0, 255, 0), ccc3(255, 236, 127)); break;
@@ -118,6 +125,10 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 	}
 
 	void editGauntletSingle(const std::string& title, ccColor3B bgColor, ccColor3B outlineColor, ccColor3B titleColor, ccColor3B highlightColor) {
+		
+		auto winSizeX = CCDirector::sharedDirector()->getWinSize().width;
+		auto winSizeY = CCDirector::sharedDirector()->getWinSize().height;
+
 		auto gauntletOutlineText = CCLabelBMFont::create(std::string(title + " Gauntlet").c_str(), "GR_OxygeneFontOutline.fnt"_spr);
 		auto gauntletHighlightText = CCLabelBMFont::create(std::string(title + " Gauntlet").c_str(), "GR_OxygeneFontHighlight.fnt"_spr);
 
@@ -127,30 +138,30 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 		auto gauntletShadowText = static_cast<CCLabelBMFont*>(this->getChildByID("title"));
 		if (!gauntletShadowText) return;
 
-	// Colors //
+	// Colors
 		m_backgroundSprite->setColor(bgColor);
 		gauntletOutlineText->setColor(outlineColor);
 		gauntletTitleText->setColor(titleColor);
 		gauntletHighlightText->setColor(highlightColor);
 
-	// Text Edits //
-
-	// Highlights //
-		gauntletHighlightText->setID("title-Highlight");
+	// Text Highlights
+		gauntletHighlightText->setID("title-highlight");
 		gauntletHighlightText->setFntFile("GR_OxygeneFontHighlight.fnt"_spr);
 		gauntletHighlightText->setScale(0.75);
-		gauntletHighlightText->setPosition(285, 290);
+		gauntletHighlightText->setPositionX(winSizeX / 2 + 2);
+		gauntletHighlightText->setPositionY(winSizeY - 30);
 
-	// Outline //
-		gauntletOutlineText->setID("title-Outline");
+	// Text Outlines
+		gauntletOutlineText->setID("title-outline");
 		gauntletOutlineText->setFntFile("GR_OxygeneFontOutline.fnt"_spr);
 		gauntletOutlineText->setScale(0.75);
-		gauntletOutlineText->setPosition(281.5, 290);
+		gauntletOutlineText->setPositionX(winSizeX / 2 - 1.5);
+		gauntletOutlineText->setPositionY(winSizeY - 30);
 
-	// Title //
+	// Title
 		gauntletTitleText->setString(std::string(title + " Gauntlet").c_str());
 
-	// Shadow //
+	// Shadow
 		gauntletShadowText->setString(std::string(title + " Gauntlet").c_str());
 		
 		this->addChild(gauntletOutlineText);
