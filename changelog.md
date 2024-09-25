@@ -1,3 +1,7 @@
+# <cp>v1.1.1-beta.1</c>
+- Fixed misspelling <cr>"Erymanthis"</c> -> <cg>"Erymanthus"</c>.
+- Renamed Mod.
+
 # <cp>v1.1.0</c>
 - Added <cy>Custom Keybinds</c> <cr>Dependency</c> on __Windows__.
     - Clicking the <cj>arrow keys</c> changes the <cg>Gauntlet Page</c>.
