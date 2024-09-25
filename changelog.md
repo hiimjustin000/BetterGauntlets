@@ -1,5 +1,5 @@
 # <cp>v1.1.0</c>
-- Added <cy>Cutsom Keybind</c> <cr>Dependency</c> on __Windows__.
+- Added <cy>Custom Keybinds</c> <cr>Dependency</c> on __Windows__.
     - Clicking the <cj>arrow keys</c> changes the <cg>Gauntlet Page</c>.
     - Clicking keys <cj>1 -> 3</c> chooses the corresponding <cg>Gauntlet</c>.
     - Clicking keys <cj>1 -> 5</c> chooses the corresponding <cg>level</c>.
