@@ -1,18 +1,64 @@
-#include <Geode/Geode.hpp>
 #include <Geode/modify/GauntletLayer.hpp>
-#include <algorithm>
 
 using namespace geode::prelude;
+
+#ifdef GEODE_IS_WINDOWS
+#include <geode.custom-keybinds/include/Keybinds.hpp>
+
+using namespace keybinds;
+
+#endif
 
 class $modify(RedesignedGauntletLayer, GauntletLayer) {
 	struct Fields {
 		bool m_loaded = false;
 	};
+
+	#ifdef GEODE_IS_WINDOWS
+	void defineKeybind(const char* id, std::function<void()> callback) {
+		this->template addEventListener<InvokeBindFilter>([=](InvokeBindEvent* event) {
+			if (event->isDown()) {
+				callback();
+			}
+			return ListenerResult::Propagate;
+		}, id);
+	}
+
+	void gauntletLevel(int desiredLevel) {
+		if (const auto gauntletLevel = getChildByIDRecursive("levels-menu")->getChildByIDRecursive(fmt::format("level-{}", desiredLevel))) {
+			auto gauntletSprite = getChildOfType<GauntletSprite>(gauntletLevel, 0);
+			if (!gauntletSprite) return;
+			for (auto node : CCArrayExt<CCNode*>(gauntletSprite->getChildren())) {
+				if (typeinfo_cast<CCSpriteGrayscale*>(node)) return;
+			}
+			GauntletLayer::onLevel(gauntletLevel);
+		}
+	}
+	#endif
+
 	bool init(GauntletType p0) {
-		if(!GauntletLayer::init(p0))
+		if (!GauntletLayer::init(p0))
 			return false;
 
-		if(this->m_levels != nullptr && !m_fields->m_loaded)
+		#ifdef GEODE_IS_WINDOWS
+		this->defineKeybind("first-gauntlet-level"_spr, [this]() {
+			RedesignedGauntletLayer::gauntletLevel(1); // default: numrow 1
+		});
+		this->defineKeybind("second-gauntlet-level"_spr, [this]() {
+			RedesignedGauntletLayer::gauntletLevel(2); // default: numrow 2
+		});
+		this->defineKeybind("third-gauntlet-level"_spr, [this]() {
+			RedesignedGauntletLayer::gauntletLevel(3); // default: numrow 3
+		});
+		this->defineKeybind("fourth-gauntlet-level"_spr, [this]() {
+			RedesignedGauntletLayer::gauntletLevel(4); // default: numrow 4
+		});
+		this->defineKeybind("fifth-gauntlet-level"_spr, [this]() {
+			RedesignedGauntletLayer::gauntletLevel(5); // default: numrow 5
+		});
+		#endif
+
+		if (this->m_levels != nullptr && !m_fields->m_loaded)
 			editGauntlets();
 
 		return true;
@@ -21,8 +67,10 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 	void loadLevelsFinished(CCArray* p0, char const* p1, int p2) {
 		GauntletLayer::loadLevelsFinished(p0, p1, p2);
 
-		if(!m_fields->m_loaded)
-			editGauntlets();
+		if (m_fields->m_loaded) return;
+
+		editGauntlets();
+
 	}
 	void editGauntlets() {
 
@@ -169,3 +217,43 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 		gauntletHighlightText->setZOrder(37);
 	}
 };
+
+#ifdef GEODE_IS_WINDOWS
+$execute {
+	BindManager::get()->registerBindable({
+		"first-gauntlet-level"_spr,
+		"First Gauntlet Level",
+		"Use this keybind (set to 1 by default) to view the first gauntlet level.",
+		{ Keybind::create(KEY_One) },
+		"Global/Gauntlet Touchup"
+	});
+	BindManager::get()->registerBindable({
+		"second-gauntlet-level"_spr,
+		"Second Gauntlet Level",
+		"Use this keybind (set to 2 by default) to view the second gauntlet level.",
+		{ Keybind::create(KEY_Two) },
+		"Global/Gauntlet Touchup"
+	});
+	BindManager::get()->registerBindable({
+		"third-gauntlet-level"_spr,
+		"Third Gauntlet Level",
+		"Use this keybind (set to 3 by default) to view the third gauntlet level.",
+		{ Keybind::create(KEY_Three) },
+		"Global/Gauntlet Touchup"
+	});
+	BindManager::get()->registerBindable({
+		"fourth-gauntlet-level"_spr,
+		"Fourth Gauntlet Level",
+		"Use this keybind (set to 4 by default) to view the fourth gauntlet level.",
+		{ Keybind::create(KEY_Four) },
+		"Global/Gauntlet Touchup"
+	});
+	BindManager::get()->registerBindable({
+		"fifth-gauntlet-level"_spr,
+		"Fifth Gauntlet Level",
+		"Use this keybind (set to 5 by default) to view the fifth gauntlet level.",
+		{ Keybind::create(KEY_Five) },
+		"Global/Gauntlet Touchup"
+	});
+}
+#endif
