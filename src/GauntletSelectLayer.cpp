@@ -35,6 +35,12 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
     void setupGauntlets() {
         GauntletSelectLayer::setupGauntlets();
 
+        m_fields->m_dots.clear();
+        if (m_fields->m_dotsMenu) {
+            m_fields->m_dotsMenu->removeFromParent();
+            m_fields->m_dotsMenu = nullptr;
+        }
+
         auto director = CCDirector::sharedDirector();
 
         m_fields->m_dotsMenu = CCMenu::create();
@@ -67,6 +73,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
         if (const auto pageButtons = m_scrollLayer->m_dots) {
             RedesignedGauntletSelectLayer::findCurrentGauntletPageUsing(pageButtons);
         }
+        #ifdef GEODE_IS_WINDOWS
         this->defineKeybind("next-gauntlet"_spr, [this]() {
             GauntletSelectLayer::onNext(nullptr); // default: right arrow key
         });
@@ -82,6 +89,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
         this->defineKeybind("third-visible-gauntlet"_spr, [this]() {
             RedesignedGauntletSelectLayer::pressGauntlet(3); // default: numrow 3
         });
+        #endif
     }
 
     void onDot(CCObject* sender) {
@@ -97,6 +105,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
         updateDots();
     }
 
+    #ifdef GEODE_IS_WINDOWS
     void defineKeybind(const char* id, std::function<void()> callback) {
         this->template addEventListener<InvokeBindFilter>([=](InvokeBindEvent* event) {
             if (event->isDown()) {
@@ -105,6 +114,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
             return ListenerResult::Propagate;
         }, id);
     }
+    #endif
 
     void findCurrentGauntletPageUsing(CCArray* pageButtons) {
         int i = 0;
