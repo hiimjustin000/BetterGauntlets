@@ -1,9 +1,9 @@
-# <cp>v1.1.1-beta.1</c>
-- Fixed misspelling <cr>"Erymanthis"</c> -> <cg>"Erymanthus"</c>.
-- Renamed Mod.
+# <cp>v1.1.1</c>
+- Fixed misspelling "Erymanthis" -> "Erymanthus".
+- Fixed an incompatability with <cy>"Gauntlet Projection"</c> by hiimjustin000.
 
 # <cp>v1.1.0</c>
-- Added <cy>Custom Keybinds</c> <cr>Dependency</c> on __Windows__.
+- Added Custom Keybinds Dependency on __Windows__.
     - Clicking the <cj>arrow keys</c> changes the <cg>Gauntlet Page</c>.
     - Clicking keys <cj>1 -> 3</c> chooses the corresponding <cg>Gauntlet</c>.
     - Clicking keys <cj>1 -> 5</c> chooses the corresponding <cg>level</c>.
