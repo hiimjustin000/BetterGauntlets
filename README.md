@@ -1,4 +1,4 @@
-# <cr>Gauntlet Redesign</c>
+# <cr>Gauntlet Touchup</c>
 <cj>My first ever Geometry Dash mod!</c>
 
 ## <co>Mod Overview</c>
