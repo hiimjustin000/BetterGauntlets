@@ -1,18 +1,18 @@
 {
-	"geode": "3.7.1",
+	"geode": "3.8.1",
 	"gd": {
 		"win": "2.206",
 		"android": "2.206",
 		"mac": "2.206",
 		"ios": "2.206"
 	},
-	"id": "dasshu.gauntletredesign",
-	"name": "Gauntlet Touchup",
-	"version": "v1.1.1",
-	"developer": "Dasshu",
+	"id": "dasshu.better-gauntlets",
+	"name": "Better Gauntlets",
+	"version": "v1.0.0",
+	"developer": "DasshuDev",
 	"description": "Brings Gauntlets to life!",
 	"links": {
-		"source": "https://github.com/JayDasshu/Gauntlet-Redesign",
+		"source": "https://github.com/DasshuDev/BetterGauntlets",
 		"community": "https://discord.gg/F94qat6N3D"
 	},
 	"tags": [
@@ -21,15 +21,16 @@
 	],
 	"resources": {
 		"files": [
-			"resources/fonts/*.fnt",
-			"resources/fonts/*.png",
-			"resources/gauntletLayer/*.png"
+			"fonts/*.fnt",
+			"fonts/*.png",
+			"gauntletSelectLayer/*.png"
+			
 		]
 	},
 	"dependencies": [
         {
             "id": "geode.node-ids",
-            "version": ">=v1.4.0",
+            "version": ">=v1.14.0",
             "importance": "required"
         },
 		{

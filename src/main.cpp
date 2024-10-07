@@ -129,7 +129,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 		case GauntletType::Galaxy: editGauntletSingle("Galaxy", ccc3(40, 26, 44), ccc3(255, 255, 255), ccc3(255, 180, 255), ccc3(181, 9, 149)); break;
 		case GauntletType::Universe: editGauntletSingle("Universe", ccc3(36, 70, 105), ccc3(255, 255, 255), ccc3(255, 252, 104), ccc3(255, 1, 136)); break;
 		
-		// Change Background for Discord Gauntlet
+		// Changing Background for Discord Gauntlet
 		case GauntletType::Discord: {
 			editGauntletSingle("Discord", ccc3(44, 47, 51), ccc3(255, 255, 255), ccc3(88, 101, 212), ccc3(35, 41, 99));
 			GameManager::get()->loadBackground(10);
@@ -139,8 +139,6 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 		}
 
 		case GauntletType::Split: editGauntletSingle("Split", ccc3(62, 63, 86), ccc3(255, 255, 255), ccc3(109, 110, 151), ccc3(255, 110, 237)); break;
-
-	// Inactive Gauntlets
 		case GauntletType::Acid: editGauntletSingle("Acid", ccc3(45, 38, 17), ccc3(255, 255, 255), ccc3(208, 255, 0), ccc3(162, 255, 24)); break;
 		case GauntletType::Christmas: editGauntletSingle("Christmas", ccc3(0, 23, 48), ccc3(255, 255, 255), ccc3(255, 0, 0), ccc3(255, 208, 0)); break;
 		case GauntletType::Dragon: editGauntletSingle("Dragon", ccc3(46, 0, 0), ccc3(255, 255, 255), ccc3(0, 255, 0), ccc3(255, 236, 127)); break;
@@ -161,10 +159,8 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 		case GauntletType::Toxic: editGauntletSingle("Toxic", ccc3(41, 4, 43), ccc3(255, 255, 255), ccc3(0, 248, 0), ccc3(9, 87, 8)); break;
 		case GauntletType::Treasure: editGauntletSingle("Treasure", ccc3(43, 49, 38), ccc3(255, 255, 255), ccc3(249, 129, 48), ccc3(136, 39, 0)); break;
 		case GauntletType::Witch: editGauntletSingle("Witch", ccc3(0, 44, 25), ccc3(255, 255, 255), ccc3(66, 99, 125), ccc3(35, 13, 46)); break;
-		
-		// Reserved for 2.21
-		// case GauntletType::NCS: editGauntletSingle("NCS", ccc3(0, 0, 0,), ccc3(255, 255, 255), ccc3(32, 254, 254), ccc3(0, 0, 0)); break;
-		// case GauntletType::NCS2: editGauntletSingle("NCS2", ccc3(0, 0, 0,), ccc3(255, 255, 255), ccc3(255, 152, 255), ccc3(0, 0, 0)); break;
+		case GauntletType::NCS: editGauntletSingle("NCS", ccc3(0, 0, 0), ccc3(255, 255, 255), ccc3(32, 254, 254), ccc3(0, 0, 0)); break;
+		case GauntletType::NCS2: editGauntletSingle("NCS", ccc3(0, 0, 0), ccc3(255, 255, 255), ccc3(255, 152, 255), ccc3(0, 0, 0)); break;
 	}
 
 	// m_fields->m_loaded = true;
