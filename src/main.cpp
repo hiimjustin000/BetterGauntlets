@@ -74,8 +74,10 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 	}
 	void editGauntlets() {
 
-	auto winSizeX = CCDirector::sharedDirector()->getWinSize().width;
-	auto winSizeY = CCDirector::sharedDirector()->getWinSize().height;
+	// auto winSizeX = CCDirector::sharedDirector()->getWinSize().width;
+	// auto winSizeY = CCDirector::sharedDirector()->getWinSize().height;
+
+	auto winSize = CCDirector::sharedDirector()->getWinSize();
 
 	// this is the shadow text for whatever fuckall reason
 	auto gauntletShadowText = static_cast<CCLabelBMFont*>(this->getChildByID("title"));
@@ -84,8 +86,8 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 	gauntletShadowText->setFntFile("GR_OxygeneFontOutline.fnt"_spr);
 	gauntletShadowText->setColor(ccc3(0, 0, 0));
 	gauntletShadowText->setScale(0.750);
-	gauntletShadowText->setPositionX(winSizeX / 2 + 1);
-	gauntletShadowText->setPositionY(winSizeY - 32.5);
+	gauntletShadowText->setPositionX(winSize.width / 2 + 1);
+	gauntletShadowText->setPositionY(winSize.height - 32.5);
 
 	// and this is the actual title text like what dude
 	auto gauntletTitleText = static_cast<CCLabelBMFont*>(this->getChildByID("title-shadow"));
@@ -94,8 +96,8 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 	gauntletTitleText->setFntFile("GR_OxygeneFont.fnt"_spr);
 	gauntletTitleText->setColor(ccc3(255, 255, 255));
 	gauntletTitleText->setScale(0.750);
-	gauntletTitleText->setPositionX(winSizeX / 2);
-	gauntletTitleText->setPositionY(winSizeY - 30);
+	gauntletTitleText->setPositionX(winSize.width / 2);
+	gauntletTitleText->setPositionY(winSize.height - 30);
 
 	switch(m_gauntletType) {
 		default: break;
@@ -169,8 +171,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 
 	void editGauntletSingle(const std::string& title, ccColor3B bgColor, ccColor3B outlineColor, ccColor3B titleColor, ccColor3B highlightColor) {
 		
-		auto winSizeX = CCDirector::sharedDirector()->getWinSize().width;
-		auto winSizeY = CCDirector::sharedDirector()->getWinSize().height;
+		auto winSize = CCDirector::sharedDirector()->getWinSize();
 
 		auto gauntletOutlineText = CCLabelBMFont::create(std::string(title + " Gauntlet").c_str(), "GR_OxygeneFontOutline.fnt"_spr);
 		auto gauntletHighlightText = CCLabelBMFont::create(std::string(title + " Gauntlet").c_str(), "GR_OxygeneFontHighlight.fnt"_spr);
@@ -191,15 +192,15 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 		gauntletHighlightText->setID("title-highlight");
 		gauntletHighlightText->setFntFile("GR_OxygeneFontHighlight.fnt"_spr);
 		gauntletHighlightText->setScale(0.75);
-		gauntletHighlightText->setPositionX(winSizeX / 2 + 2);
-		gauntletHighlightText->setPositionY(winSizeY - 30);
+		gauntletHighlightText->setPositionX(winSize.width / 2 + 2);
+		gauntletHighlightText->setPositionY(winSize.height - 30);
 
 	// Text Outlines
 		gauntletOutlineText->setID("title-outline");
 		gauntletOutlineText->setFntFile("GR_OxygeneFontOutline.fnt"_spr);
 		gauntletOutlineText->setScale(0.75);
-		gauntletOutlineText->setPositionX(winSizeX / 2 - 1.5);
-		gauntletOutlineText->setPositionY(winSizeY - 30);
+		gauntletOutlineText->setPositionX(winSize.width / 2 - 1.5);
+		gauntletOutlineText->setPositionY(winSize.height - 30);
 
 	// Title
 		gauntletTitleText->setString(std::string(title + " Gauntlet").c_str());
