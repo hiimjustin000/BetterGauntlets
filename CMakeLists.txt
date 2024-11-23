@@ -4,13 +4,16 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_OSX_ARCHITECTURES "arm64;x86_64")
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
 
-project(GauntletRedesign VERSION 1.0.0)
+project(BetterGauntlets VERSION 1.0.0)
 
-add_library(${PROJECT_NAME} SHARED
-    src/main.cpp
-    src/GauntletSelectLayer.cpp
-    # Add any extra C++ source files here
+file(GLOB_RECURSE SOURCES
+        src/*.cpp
+        src/*/*.hpp
 )
+add_library(${PROJECT_NAME} SHARED
+        ${SOURCES}
+)
+    # Add any extra C++ source files here
 
 if (NOT DEFINED ENV{GEODE_SDK})
     message(FATAL_ERROR "Unable to find Geode SDK! Please define GEODE_SDK environment variable to point to Geode")

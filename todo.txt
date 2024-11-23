@@ -1,0 +1,43 @@
+Better Gauntlets To-Do:
+
+Main To-Do:
+- Replace "The Lost Gauntlets" texture with GR_OxygeneFont and shaders
+    - Disable the original "The Lost Gauntlets" title
+    - "The" <- smaller text [x]
+    - "Lost Gauntlets" <- bigger text [x]
+- Add menu particles
+    - Possibilities:
+        - Ash
+        - Dust
+        - Clouds/Mist
+- Add menu decorations
+    - Floor [x]
+    - Chains [x]
+    - Torches
+    - Flickering light
+- Settings To-Do:
+    - Fully implement "Update Backgrounds" setting
+        - vanilla background visibility false [x]
+        - add particles
+        - recolor everything (kill me)
+
+Done:
+- Set star-label color on level completion
+- Separate Gauntlet customizations into their own separate files (decluttering main.cpp)
+- Check "Level Reposition" setting for gauntlet-shadow, set visibility to false for ALL LEVELS
+- Loop Island and Island contents (star-label, gauntlet-level, etc.) IDs for each Gauntlet
+- Settings
+    - Change Gauntlet sprite based on "Level Reposition" setting status
+- Properly center gauntlets
+- 
+
+v2.0.0 Plans
+- Search button
+- Create GDW Islands
+    - 0/52
+- Add arrow for level accessibility
+    - Move up and down
+- Move assets up and down in a loop
+- Settings:
+    - Re-implement Level Reposition (support for GDW islands)
+    - Disable island movement settings (reduce motion)

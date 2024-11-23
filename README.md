@@ -1,24 +1,18 @@
-# Gauntlet Touchup
+# Better Gauntlets
+Gauntlets as they are don't get the love they deserve. *Let's change that.*
 
-## <co>Mod Overview</c>
-Gauntlets as they are don't get the love they deserve, so this mod aims to bring <cr>life to the Gauntlets</c> with custom <co>colors</c>, <cy>fonts</c>, and <cg>more</c>!
+## Mod Overview
+This is my very first mod! <c-FF6969>*we dont talk about the other one.</c>*
 
-## <co>Functions</c>
-- Adds:
-    - Reworked Gauntlet header fonts
-    - Visual improvements per Gauntlet
-    - Unique Islands
-    - Gauntlet-specific Particles
-    - New textures for Gauntlet Levels
-    - Custom Backgrounds for `GauntletLayer`
-    - Added Page Buttons on `GauntletSelectLayer`
-    - Added Keybinds for Gauntlets and Gauntlet Levels (Windows only)
+Have you ever thought the Gauntlets looked <cr>bland and boring</c>? They have unique and creative themes circled around them, yet they all look so <c-808080>dull</c>! This mod aims to bring life to the Gauntlets with custom colors, fonts, QoL tweaks, and more, truly a <cs>**Better Gauntlet**</c> experience!
 
-## <co>Special Thanks</c>
-- <cy>**Erymanthus**</c> - Helping with the custom font
-- <cy>**Capeling**</c> - Helping with lots of code and tips
-- <cy>**LimeGradient**</c> - Setting up the mod environment for me :D
-- <cy>**The Geode Discord**</c> - For putting up with me
+## Features
+- <cg>New</c> colored backgrounds!
+- <cg>New</c> keybinds! <cj>(Windows only)</c>
+- <cy>Reworked</c> header fonts!
+- <cy>Reworked</c> page buttons!
 
-## <co>Contributors:</c>
-        LimeGradient, Capeling, Erymanthus, hiimjustin000
+## Special Thanks
+- **[SeasickK](user:10038989)** - for unknowingly inspiring me to make this mod.
+- **[Capeling](user:18226543)** - Helping with code optimization and tips.
+- <ca>**The Geode Discord**</c> - For answering my stupid questions.

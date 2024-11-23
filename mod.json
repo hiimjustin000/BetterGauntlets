@@ -1,19 +1,23 @@
 {
-	"geode": "3.8.1",
+	"geode": "4.0.1",
 	"gd": {
-		"win": "2.206",
-		"android": "2.206",
-		"mac": "2.206",
-		"ios": "2.206"
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
 	},
 	"id": "dasshu.better-gauntlets",
 	"name": "Better Gauntlets",
-	"version": "v1.0.0",
+	"version": "v1.0.0-prerelease.4",
 	"developer": "DasshuDev",
 	"description": "Brings Gauntlets to life!",
 	"links": {
 		"source": "https://github.com/DasshuDev/BetterGauntlets",
-		"community": "https://discord.gg/F94qat6N3D"
+		"community": "https://discord.gg/F94qat6N3D",
+		"homepage": "https://dasshu.dev"
+	},
+	"issues": {
+		"info": "https://github.com/DasshuDev/BetterGauntlets/issues"
 	},
 	"tags": [
 		"interface",
@@ -21,16 +25,16 @@
 	],
 	"resources": {
 		"files": [
-			"fonts/*.fnt",
-			"fonts/*.png",
-			"gauntletSelectLayer/*.png"
-			
+			"resources/fonts/*.fnt",
+			"resources/fonts/*.png",
+			"resources/GauntletLayer/*/*.png",
+			"resources/GauntletSelectLayer/*.png"
 		]
 	},
 	"dependencies": [
         {
             "id": "geode.node-ids",
-            "version": ">=v1.14.0",
+            "version": ">=v1.15.0",
             "importance": "required"
         },
 		{
@@ -39,5 +43,27 @@
             "importance": "required",
 			"platforms": ["win"]
 		}
-	]
+	],
+	"settings": {
+		"general": {
+            "type": "title",
+            "name": "General Settings"
+		},
+		"experimental": {
+			"type": "title",
+			"name": "Experimental Settings"
+		},
+		"update-discord-sprite": {
+			"name": "Update Discord Sprite",
+			"description": "Changes the <cl>Discord Gauntlet</c> sprite to be up-to-date with the <cg>current</c> Discord logo.\n\n<cr>This setting is WIP, and may not work properly on GauntletSelectLayer.</c>",
+			"type": "bool",
+			"default": true
+		},
+		"update-backgrounds": {
+			"name": "Update Layout",
+			"description": "Updates the gauntlet background textures and sprite layout to look more immersive.",
+			"type": "bool",
+			"default": true
+		}
+	}
 }
