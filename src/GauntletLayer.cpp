@@ -75,7 +75,6 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 	void editGauntlets() {
 
 	auto winSize = CCDirector::sharedDirector()->getWinSize();
-
 	auto levelMenuPos = static_cast<CCMenu*>(this->getChildByIDRecursive("levels-menu"));
 	if (!levelMenuPos) return;
 		levelMenuPos->setPosition(0, 0);
