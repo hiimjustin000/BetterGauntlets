@@ -139,7 +139,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
 
         auto main = getChildByID("main-layer");
 
-        auto floor = CCSprite::create("gauntletGround_001.png"_spr);
+        auto floor = CCSprite::createWithSpriteFrameName("gauntletGround_001.png"_spr);
         if (floor) {
             floor->setID("floor");
             floor->setColor(ccc3(37, 37, 37));
@@ -257,7 +257,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
             torchParentNode->setZOrder(-1);
             decorationParentNode->addChild(torchParentNode);
 
-            auto lightL = CCSprite::create("torchShine_001.png"_spr);
+            auto lightL = CCSprite::createWithSpriteFrameName("torchShine_001.png"_spr);
             if (lightL) {
                 
                 auto lightScaleUp = CCEaseInOut::create(CCScaleTo::create(1.5f, 2.0f), 2.0f);
@@ -281,7 +281,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
                 torchParentNode->addChild(lightL);
             }
 
-            auto lightR = CCSprite::create("torchShine_001.png"_spr);
+            auto lightR = CCSprite::createWithSpriteFrameName("torchShine_001.png"_spr);
             if (lightR) {
                 
                 auto lightScaleUp = CCEaseInOut::create(CCScaleTo::create(1.5f, 2.0f), 2.0f);
@@ -323,7 +323,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
                 torchParentNode->addChild(torchParticleLB);
                 }
             
-            auto torchHandleL = CCSprite::create("wallTorch_001.png"_spr);
+            auto torchHandleL = CCSprite::createWithSpriteFrameName("wallTorch_001.png"_spr);
             if (torchHandleL) {
                 torchHandleL->setPosition(ccp(director->getScreenLeft() + 75.f, winSize.height / 2 - 20));
                 torchHandleL->setZOrder(2);
@@ -350,7 +350,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
                 torchParentNode->addChild(torchParticleRB);
                 }
             
-            auto torchHandleR = CCSprite::create("wallTorch_001.png"_spr);
+            auto torchHandleR = CCSprite::createWithSpriteFrameName("wallTorch_001.png"_spr);
             if (torchHandleR) {
                 torchHandleR->setPosition(ccp(director->getScreenRight() - 75.f, winSize.height / 2 - 20));
                 torchHandleR->setZOrder(2);
@@ -541,14 +541,14 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
                                             portalParentNode->setPosition(ccp(gauntletNode->getContentSize().width / 2 - 3, gauntletNode->getContentSize().height / 2));
                                             gauntletNode->addChild(portalParentNode);
 
-                                            auto portalBase = CCSprite::create("gauntletPortal_001_01.png"_spr);
+                                            auto portalBase = CCSprite::createWithSpriteFrameName("gauntletPortal_001_01.png"_spr);
                                             portalBase->setID(fmt::format("portal-base", i + 1));
                                             portalBase->setColor(backgroundColor);
                                             portalBase->setPosition(ccp(1, 0));
                                             portalBase->setZOrder(0);
                                             portalParentNode->addChild(portalBase);
                                             
-                                            auto portalOut = CCSprite::create("gauntletPortal_002.png"_spr);
+                                            auto portalOut = CCSprite::createWithSpriteFrameName("gauntletPortal_002.png"_spr);
                                             portalOut->setID("portal-outline");
                                             portalOut->setPosition(ccp(3, -1.75));
                                             portalOut->setZOrder(-3);
@@ -562,7 +562,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
                                                 }
                                                 portalParentNode->addChild(portalOut);
 
-                                            auto portalFill = CCSprite::create("gauntletPortal_003.png"_spr);
+                                            auto portalFill = CCSprite::createWithSpriteFrameName("gauntletPortal_003.png"_spr);
                                             portalFill->setID("portal-fill");
                                             portalFill->setPosition(ccp(2.5, 1.50));
                                             portalFill->setZOrder(-1);
@@ -570,7 +570,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
                                             portalFill->setBlendFunc(portalFillBlend);
                                             portalParentNode->addChild(portalFill);
 
-                                            auto portalColor = CCSprite::create("gauntletPortal_004_02.png"_spr);
+                                            auto portalColor = CCSprite::createWithSpriteFrameName("gauntletPortal_004_02.png"_spr);
                                             portalColor->setID("portal-color");
                                             portalColor->setPosition(ccp(1.25, 0.3));
                                             portalColor->setZOrder(-1);
@@ -584,7 +584,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
                                                 }
                                                 portalParentNode->addChild(portalColor);
 
-                                            auto portalBG = CCSprite::create("gauntletPortal_005.png"_spr);
+                                            auto portalBG = CCSprite::createWithSpriteFrameName("gauntletPortal_005.png"_spr);
                                             portalBG->setID("portal-background");
                                             portalBG->setPosition(ccp(0, 0));
                                             portalBG->setScale(1.25);
@@ -599,7 +599,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
                                                 }
                                                 portalParentNode->addChild(portalBG);
 
-                                            auto portalBGGlow = CCSprite::create("gauntletPortal_006.png"_spr);
+                                            auto portalBGGlow = CCSprite::createWithSpriteFrameName("gauntletPortal_006.png"_spr);
                                             portalBGGlow->setID("portal-background-glow");
                                             portalBGGlow->setPosition(ccp(2.5, 1));
                                             portalBGGlow->setZOrder(-1);
@@ -608,7 +608,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
                                             portalBGGlow->setBlendFunc(portalBGGlowBlend);
                                             portalParentNode->addChild(portalBGGlow);
                                             
-                                            auto portalPlaque = CCSprite::create("gauntletPlaque_001.png"_spr);
+                                            auto portalPlaque = CCSprite::createWithSpriteFrameName("gauntletPlaque_001.png"_spr);
                                             portalPlaque->setID(fmt::format("portal-plaque", i + 1));
                                             portalPlaque->setPosition(ccp(3, -95));
                                             portalPlaque->setZOrder(1);
@@ -622,13 +622,13 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
                                                 }
                                                 portalParentNode->addChild(portalPlaque);
 
-                                            auto portalPlaqueOut = CCSprite::create("gauntletPlaque_002.png"_spr);
+                                            auto portalPlaqueOut = CCSprite::createWithSpriteFrameName("gauntletPlaque_002.png"_spr);
                                             portalPlaqueOut->setID("portal-plaque-outline");
                                             portalPlaqueOut->setPosition(ccp(portalPlaque->getPositionX() + 1.5, portalPlaque->getPositionY() - 1));
                                             portalPlaqueOut->setZOrder(-3);
                                             portalParentNode->addChild(portalPlaqueOut);
                                             
-                                            auto portalNamePlaque = CCSprite::create("gauntletPlaque_003.png"_spr);
+                                            auto portalNamePlaque = CCSprite::createWithSpriteFrameName("gauntletPlaque_003.png"_spr);
                                             portalNamePlaque->setID(fmt::format("portal-name-plaque", i + 1));
                                             portalNamePlaque->setPosition(ccp(3, 84));
                                             portalNamePlaque->setZOrder(1);
@@ -644,7 +644,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
                                                 }
                                                 portalParentNode->addChild(portalNamePlaque);
 
-                                            auto portalNamePlaqueOut = CCSprite::create("gauntletPlaque_004_1.png"_spr);
+                                            auto portalNamePlaqueOut = CCSprite::createWithSpriteFrameName("gauntletPlaque_004_1.png"_spr);
                                             portalNamePlaqueOut->setID("portal-name-plaque-outline");
                                             portalNamePlaqueOut->setPosition(ccp(portalNamePlaque->getPositionX() + 0.75, portalNamePlaque->getPositionY() - 0.75));
                                             portalNamePlaqueOut->setZOrder(-3);

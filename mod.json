@@ -33,7 +33,7 @@
 				"resources/GauntletLayer/**/*.png"
 			],
 			"GauntletSelectLayer": [
-				"resources/GauntletSelectLayer/*.png"
+				"resources/GauntletSelectLayer/**/*.png"
 			]
 		}
 	},

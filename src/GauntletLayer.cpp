@@ -222,7 +222,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -254,7 +254,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -286,7 +286,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -319,7 +319,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -351,7 +351,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -383,7 +383,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -415,7 +415,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -447,7 +447,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -479,7 +479,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -511,7 +511,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -543,7 +543,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -575,7 +575,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -607,7 +607,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -641,7 +641,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -673,7 +673,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -705,7 +705,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -737,7 +737,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -769,7 +769,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -801,7 +801,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -833,7 +833,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -865,7 +865,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -897,7 +897,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -929,7 +929,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -961,7 +961,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -993,7 +993,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1025,7 +1025,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1057,7 +1057,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1089,7 +1089,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1121,7 +1121,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1153,7 +1153,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1185,7 +1185,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1217,7 +1217,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1249,7 +1249,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1281,7 +1281,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1313,7 +1313,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1345,7 +1345,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1377,7 +1377,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1409,7 +1409,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1441,7 +1441,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1473,7 +1473,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1504,7 +1504,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1536,7 +1536,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1568,7 +1568,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1600,7 +1600,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1632,7 +1632,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1664,7 +1664,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1697,7 +1697,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1730,7 +1730,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1767,7 +1767,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 									if (!updatedSprite) {
 										// :3
 									} else {
-										swapSprite->setDisplayFrame(CCSprite::create("island_discord_002.png"_spr)->displayFrame());
+										swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_discord_002.png"_spr)->displayFrame());
 									}
 								// auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 								// if (!reposLevel) {
@@ -1775,9 +1775,9 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 								// } else { // Setting "discord-sprite"
 								// 	auto updatedSprite = Mod::get()->getSettingValue<bool>("update-discord-sprite");
 								// 	if (!updatedSprite) {
-								// 		swapSprite->setDisplayFrame(CCSprite::create("island_lvl_discord_001.png"_spr)->displayFrame());
+								// 		swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_discord_001.png"_spr)->displayFrame());
 								// 	} else {
-								// 		swapSprite->setDisplayFrame(CCSprite::create("island_lvl_discord_002.png"_spr)->displayFrame());
+								// 		swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_discord_002.png"_spr)->displayFrame());
 								// 	}
 								// }
 							}
@@ -1809,7 +1809,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1842,7 +1842,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1875,7 +1875,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1908,7 +1908,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
@@ -1941,7 +1941,7 @@ class $modify(RedesignedGauntletLayer, GauntletLayer) {
 					// 			if (swapSprite) {
 					// 				auto reposLevel = Mod::get()->getSettingValue<bool>("level-reposition");
 					// 				if (reposLevel) {
-					// 					swapSprite->setDisplayFrame(CCSprite::create("island_lvl_fire_001.png"_spr)->displayFrame());
+					// 					swapSprite->setDisplayFrame(CCSprite::createWithSpriteFrameName("island_lvl_fire_001.png"_spr)->displayFrame());
 					// 				}
 					// 			}
 					// 		}
