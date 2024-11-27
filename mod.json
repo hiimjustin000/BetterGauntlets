@@ -26,7 +26,7 @@
 	"resources": {
 		"files": [
 			"resources/fonts/*.fnt",
-			"resources/fonts/*.png",
+			"resources/fonts/*.png"
 		],
 		"spritesheets": {
 			"GauntletLayer": [
