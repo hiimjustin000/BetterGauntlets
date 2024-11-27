@@ -541,7 +541,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
                                             portalParentNode->setPosition(ccp(gauntletNode->getContentSize().width / 2 - 3, gauntletNode->getContentSize().height / 2));
                                             gauntletNode->addChild(portalParentNode);
 
-                                            auto portalBase = CCSprite::createWithSpriteFrameName("gauntletPortal_001_01.png"_spr);
+                                            auto portalBase = CCSprite::createWithSpriteFrameName("gauntletPortal_001.png"_spr);
                                             portalBase->setID(fmt::format("portal-base", i + 1));
                                             portalBase->setColor(backgroundColor);
                                             portalBase->setPosition(ccp(1, 0));
@@ -570,7 +570,7 @@ class $modify(RedesignedGauntletSelectLayer, GauntletSelectLayer) {
                                             portalFill->setBlendFunc(portalFillBlend);
                                             portalParentNode->addChild(portalFill);
 
-                                            auto portalColor = CCSprite::createWithSpriteFrameName("gauntletPortal_004_02.png"_spr);
+                                            auto portalColor = CCSprite::createWithSpriteFrameName("gauntletPortal_004.png"_spr);
                                             portalColor->setID("portal-color");
                                             portalColor->setPosition(ccp(1.25, 0.3));
                                             portalColor->setZOrder(-1);
