@@ -27,9 +27,15 @@
 		"files": [
 			"resources/fonts/*.fnt",
 			"resources/fonts/*.png",
-			"resources/GauntletLayer/*/*.png",
-			"resources/GauntletSelectLayer/*.png"
-		]
+		],
+		"spritesheets": {
+			"GauntletLayer": [
+				"resources/GauntletLayer/**/*.png"
+			],
+			"GauntletSelectLayer": [
+				"resources/GauntletSelectLayer/*.png"
+			]
+		}
 	},
 	"dependencies": [
         {
